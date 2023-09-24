@@ -1,4 +1,4 @@
-# journey
+# Journey
 
 The start to my portfolio 
 
