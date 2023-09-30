@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">|
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio xsv</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">XSV</div>
+        <div class="nav-items">
+          <a href="#header">About me</a>
+          <a href="#about">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact me</a>
+        </div>
+    </nav>
+  <section class="hero">
+    <div class="hero-container"></div>
+     <div class="column-left">
+        <h1>Sienna's Portfolio </h1>
+        <button>Lets Begin</button>
+    </div>
+   
+   . <div id="About">
+      <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+          <img src="me n babe xo.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>
+            Hi Everyone! Welcome to my portfolio! I am 22 years old, I grew up in the Bay Area and I am the youngest out of 3 siblings. 
+            I have always been interested in learning new things. Since I was little, I have always loved using computers and figuring
+            out how to use them on my own. I am really excited to be expanding my journey into the engineer atmosphere. I am a 
+            jack-of-all-trades type of gal based on whatever I set my mind to. I am excited to provide uniqe web development strategies as I learn!
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UK</span><br>Designing Wed/App interfaces</li>
+              <li><span>Web Development</span><br>Wed/App interfaces</li>
+              <li><span>App Development</span><br>Building iOS/Android apps</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-------- Portfolio -------->
+  <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Assets/work2.png">
+            <div class="layer">
+              <h3> Future Project 1</h3>
+              <p>This is my Project 1!</p>
+              <a href="">C:\Users\13413\downloads\prework-study-guide\prework-study-guide\index.html</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Assets/work3.png">
+            <div class="layer">
+              <h3> Future Project 2</h3>
+              <p>This is my Project 2!</p>
+              <a href="">C:\Users\13413\downloads\prework-study-guide\prework-study-guide\index.html</a>
+            </div>
+          </div>
+        </div>
+       </div>
+  </div>
+
+  <!-----------contacts----------->
+<div id="contact">
+  <div class="container">
+    <div class="container">
+      <div class="contact-center"></div>
+      <h1 class="sub-title">Contact me</h1>
+      <p>Siennastarrv@gmail.com</p>
+      <p>341-333-8830</p>
+      <div class="contact-center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+
+      var tablinks = document.getElementsByClassName("tab-links active link");
+      var tabcontents = document.getElementsByClassName("tab-contents active link");
+      
+      function opentab(tabname){
+         for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+    }
+
+
+  </script>
+
+</body>
+</html>
